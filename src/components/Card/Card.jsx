@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import './Card.css'
 
 const Card = (props) => {
-    const [showTitulo, setShowTitulo] = useState(true);
+    const [showTitulo, setShowTitulo] = useState(false);
 
     return(
         <div className="container-card" onMouseEnter={() => setShowTitulo(true)} onMouseLeave={() => setShowTitulo(false)}>

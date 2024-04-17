@@ -18,31 +18,25 @@ function Api() {
 
     return(
         <>
-        <h1>Lista de Filmes</h1>
-
-        <div>
+            <div className="container-api">
+                {data.map(item => (
+                    <Card key={item._id} titulo={item.name} image={item.imageUrl} />
+                ))}
+            </div>
+            
+        {/* <ul>
             {data.map(item => (
-                <Card key={item._id} titulo={item.name} image={item.imageUrl} />
+            <li key={item._id}>
+                {<Card titulo={item.name} image={item.imageUrl}/>}
+            </li>
             ))}
-        </div>
-        
-      {/* <ul>
-        {data.map(item => (
-          <li key={item._id}>
-            {<Card titulo={item.name} image={item.imageUrl}/>}
-          </li>
-        ))}
-        {/* {data.map(item => (
-          <li key={item._id}>
-            {item._id} <strong>{item.name}</strong> - Filmes: {item.films.join(', ')}
-          </li>
-        ))} 
-      </ul> */}
-
-      {data.forEach(item => {
-        
-      })}
-  
+            {/* {data.map(item => (
+            <li key={item._id}>
+                {item._id} <strong>{item.name}</strong> - Filmes: {item.films.join(', ')}
+            </li>
+            ))} 
+        </ul> */}
+    
         </>
     )
 }

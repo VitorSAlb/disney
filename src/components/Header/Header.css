@@ -1,0 +1,31 @@
+header {
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-header img{
+    width: 100px;
+}
+
+nav {
+    width: 200px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    text-decoration: none
+}
+
+nav ul li {
+    color: aliceblue;
+    
+}
